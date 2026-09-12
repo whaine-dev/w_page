@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body {
+    background-color: var(--fundo);
+    font-family: "JetBrains Mono", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+
+    --fundo: #0D0F16;
+    --destaque: #0d256e;
+    --secundario: #6a7ebb;
+    --terciario: #2f4588;
+    --texto: #fff;
+
+}
+
+
+
+.fundo {
+    background-color: var(--fundo);
+    padding: 20px;
+}
+
+
+
+
+/* ============ Cabelçalho ============ */
+
+.cabecalho {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.foto {
+    background-color: var(--terciario);
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    border: 10px solid var(--destaque);
+    transition: 0.9s;
+}
+
+.foto:hover,
+.foto_ajuste:hover {
+    box-shadow: 0px 0px 10px 8px var(--terciario);
+    border: 5px solid var(--terciario);
+    transform: scale(1.2);
+}
+
+.foto_ajuste {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 5px solid var(--destaque);
+    transition: 0.9s;
+}
+
+.nome,
+p,
+h5 {
+    color: var(--texto);
+    transition: 0.9s;
+}
+
+.nome:hover,
+p:hover {
+    color: var(--terciario);
+}
+
+
+/* =========== Redes Sociais ========== */
+
+.conteiner_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 38.6px;
+}
+
+.redes-sociais a {
+    color: var(--texto);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+
+.redes-sociais {
+    background-color: var(--terciario);
+    margin: 50px 0;
+    padding: 15px;
+    border-radius: 18px;
+    border: 3px solid var(--destaque);
+    width: 300px;
+}
+
+
+.rede_lista li {
+    transition: 0.9s;
+}
+
+.redes-sociais:hover {
+    background-color: var(--terciario);
+    box-shadow: 0px 0px 10px 5px var(--terciario);
+    border: 3px solid var(--terciario);
+    transform: translateY(-5px);
+}
+
+i {
+    font-size: 20px;
+}
+
+/* ============= roda pé ==============*/
+.rodape {
+    text-align: center;
+}
